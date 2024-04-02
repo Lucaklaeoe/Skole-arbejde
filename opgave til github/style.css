@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header{
+    background-color: gray;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+header div{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.logo{
+    padding: 5px 10px;
+}
+/* Header */
+
+/* Container */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    margin: 5px;
+}
+.box1, .box2, .box3{
+    background-color: grey;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    height: 200px;
+}
+.box2{
+    height: 150px;
+
+    display: flex;
+}
+.box3{
+    height: 400px;
+}
+
+.tilbud_box1, .tilbud_box2, .tilbud_box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.tilbud_box1{
+    height: 20%;
+}
+.tilbud_box2{
+    height: 40%;
+}
+.tilbud_box3{
+    height: 60%;
+}
+/* Container */
+
+/* Footer */
+footer{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+}
+/* Footer */
+
+@media screen and (min-width: 800px) {
+    /* header */
+    header{
+        padding: 15px;
+        margin: 15px;
+    }
+    .nav{
+        width: 55%;
+    }
+    /* header */
+
+    /* Container */
+    .container{
+        display: flex;
+        margin: 15px;
+        gap: 15px;
+    }
+    .box1, .box3{
+        height: 300px;
+        width: auto;
+        flex-grow: 1;
+    }
+    .box1{
+        order: 1;
+    }
+    .box2{
+        order: 3;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    .box3{
+        order: 2;
+    }
+    /* Container */
+    /* Footer */
+    Footer{
+        margin: 15px;
+    }
+    /* Footer */
+}
