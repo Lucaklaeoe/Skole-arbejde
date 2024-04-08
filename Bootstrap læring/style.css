@@ -1,0 +1,12 @@
+.btn-danger{
+    background: cornflowerblue;
+    border: cornflowerblue;
+}
+
+.btn-danger:hover{
+    background: rgb(58, 117, 225);
+}
+
+.bi-phone-vibrate{
+    font-size: 2em;
+}
